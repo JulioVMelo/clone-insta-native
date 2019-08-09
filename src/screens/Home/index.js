@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, StyleSheet, Image, SafeAreaView } from 'react-native';
+import Story from '../../components/story';
+import { View, StyleSheet, Image, SafeAreaView, ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
 
 const styles = StyleSheet.create({
@@ -39,6 +40,9 @@ const Home = () => {
             <Image source = {require('../../assets/images/igtv.png')} style = {{ width: 27, height: 27 }} resizeMode="contain" />
             <Icon name="paper-plane" size={20} color="#000"/>
           </View>
+        </View>
+        <View>
+          <Story />  
         </View>
       </View>
     </>
