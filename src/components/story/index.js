@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { View, Image, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, Image, StyleSheet, ScrollView } from 'react-native';
 
 const styles = StyleSheet.create({
   story: {

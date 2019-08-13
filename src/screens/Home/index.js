@@ -1,5 +1,6 @@
 import React from 'react';
 import Story from '../../components/story';
+import Post from '../../components/post'
 import { View, StyleSheet, Image, SafeAreaView, ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
 
@@ -7,6 +8,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fff',
     flex: 1,
+    marginBottom: 120,
   },
   header: {
     flexDirection: 'row',
@@ -23,14 +25,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: 60,
     justifyContent: 'space-between',
-  }
+  },
 });
+
 
 const Home = () => {
   return (
     <>
       <SafeAreaView style={{ flex: 0, backgroundColor: '#f2f2f2' }} />
-
+      
       <View style={styles.container}>
         <View style={styles.header}>
           <Icon style={{width:60}} name="camera" size={25} color="#000"/>
@@ -42,7 +45,14 @@ const Home = () => {
           </View>
         </View>
         <View>
-          <Story />  
+          <Story />
+          <ScrollView>
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+          </ScrollView>
         </View>
       </View>
     </>
